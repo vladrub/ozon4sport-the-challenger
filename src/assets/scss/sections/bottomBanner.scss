@@ -6,6 +6,11 @@
     box-sizing: border-box;
     width: 100%;
 
+    &__link {
+        color: #fff;
+        text-decoration: none;
+    }
+
     &__content {
         display: flex;
     }
