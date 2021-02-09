@@ -1,0 +1,98 @@
+.prizes {
+    padding-top: em(40);
+    padding-right: em(119);
+    background-image: url('/public/images/prizesBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__header {
+        padding-left: em(120);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: em(40);
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: em(48);
+        line-height: em(50, 48);
+    }
+
+    &__link {
+        color: #fff;
+        font-size: em(14);
+        line-height: em(14, 14);
+        padding-top: em(29, 14);
+    }
+
+    &__win {
+        display: flex;
+        padding-left: em(108);
+        margin-bottom: em(26);
+    }
+
+    &__prize {
+        padding-right: em(176);
+    }
+
+    &__place {
+        font-weight: 400;
+        font-size: em(18);
+        line-height: em(24, 18);
+        background: #f81155;
+        border: em(2) solid #fff;
+        box-sizing: border-box;
+        border-radius: em(28, 18);
+        padding: 0 em(11);
+        display: inline-block;
+    }
+
+    &__rubles {
+        font-weight: 700;
+        font-size: em(48);
+        line-height: em(48, 48);
+    }
+
+    &__how-to-win {
+        display: flex;
+    }
+
+    &__icon {
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_first {
+            background-image: url('/public/images/icons/prizesIcons/first.png');
+            width: em(62);
+            height: em(62);
+        }
+
+        &_second {
+            background-image: url('/public/images/icons/prizesIcons/second.png');
+            width: em(59);
+            height: em(59);
+        }
+
+        &_third {
+            background-image: url('/public/images/icons/prizesIcons/third.png');
+            width: em(56);
+            height: em(56);
+            margin-left: em(8);
+        }
+    }
+
+    &__rules {
+        font-weight: 300;
+        font-size: em(21);
+        line-height: em(24, 21);
+        padding-left: em(12);
+    }
+
+    &__banner {
+        padding-top: em(34, 156);
+        padding-left: em(277, 156);
+        font-weight: 500;
+        font-size: em(156);
+        line-height: em(160, 156);
+    }
+}

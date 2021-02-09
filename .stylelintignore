@@ -1,0 +1,4 @@
+node_modules/
+build/
+src/icons/
+src/assets/scss/utility/

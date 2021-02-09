@@ -1,0 +1,16 @@
+{
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "css.validate": false,
+    "scss.validate": false,
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "files.autoSaveDelay": 500,
+    "files.eol": "\n",
+    "window.zoomLevel": 1,
+    "workbench.tree.indent": 20,
+    "explorer.autoReveal": false
+}

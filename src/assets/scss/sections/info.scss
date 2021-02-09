@@ -1,0 +1,48 @@
+.info {
+    background: #002855;
+    padding: em(60) 0 em(296) em(120);
+
+    &__text {
+        font-weight: 300;
+        font-size: em(21);
+        line-height: em(28, 21);
+        margin-bottom: em(60, 21);
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+        padding-right: em(240);
+    }
+
+    &__about {
+        display: flex;
+        width: em(336);
+    }
+
+    &__icon {
+        width: em(56);
+        height: em(56);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_calendar {
+            background-image: url('/public/images/icons/infoIcons/calendar.svg');
+        }
+
+        &_play {
+            background-image: url('/public/images/icons/infoIcons/play.svg');
+        }
+
+        &_flag {
+            background-image: url('/public/images/icons/infoIcons/flag.svg');
+        }
+    }
+
+    &__about-title {
+        padding-left: em(20, 21);
+        font-weight: 500;
+        font-size: em(21);
+        line-height: em(28);
+    }
+}

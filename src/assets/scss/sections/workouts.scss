@@ -1,0 +1,77 @@
+.workouts {
+    padding-top: em(90);
+    padding-left: em(120);
+    color: #000;
+    margin-bottom: em(70);
+
+    &__header {
+        display: flex;
+        margin-bottom: em(40);
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: em(48);
+        line-height: em(50, 48);
+        padding-right: em(116, 48);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        min-height: em(80);
+        border-left: em(1) solid #005bff;
+        padding-left: em(10);
+        margin-top: em(7);
+    }
+
+    &__download {
+        font-weight: 500;
+        font-size: em(21);
+        line-height: em(28, 21);
+        padding-left: em(20, 21);
+    }
+
+    &__link {
+        color: #005bff;
+        text-decoration: none;
+    }
+
+    &__group {
+        display: flex;
+        padding-right: em(255);
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: em(56);
+        height: em(56);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_check {
+            background-image: url('/public/images/icons/workoutsIcons/check.png');
+        }
+
+        &_1 {
+            width: em(30);
+            background-image: url('/public/images/icons/workoutsIcons/1.png');
+        }
+
+        &_2 {
+            background-image: url('/public/images/icons/workoutsIcons/2.png');
+        }
+
+        &_3 {
+            background-image: url('/public/images/icons/workoutsIcons/3.png');
+        }
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: em(18);
+        line-height: em(24, 18);
+        padding-top: em(25, 18);
+    }
+}

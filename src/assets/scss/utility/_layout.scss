@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+#app {
+    // this formula is working like such:
+    // relative em divider (12) should be divided by 1% of device width
+    // (1vw or 3.2 in this particular case as we start from mobile size)
+    // this number can be adjusted to the design
+
+    font-size: (12 / 3.2) + vw;
+
+    @media (min-width: $mobileScaleStop) {
+        // Stopping scale so it wont look like crap
+        // reversed logic here:
+        // we know that on 320 3.75vw is equal to 12
+        // than we can calculate this same 3.75 vw for any width like such:
+
+        font-size: (($mobileScaleStop / 100) * (12 / 3.2));
+    }
+
+    @media (min-width: $tablet) {
+        // to scale tablet back down we need to calculate
+        // realTabletWidth/ourTabletWidth ratio
+        font-size: ($designTablet / $tablet) + vw;
+    }
+
+    @media (min-width: $desktop) {
+        // same as tablet, we need to calculatie ratio,
+        // but this time the other way around, simply because now 1vw will be more than 12 px
+        // because of this we shold give to a vw less than 1 value, so it will look like this:
+
+        font-size: ($desktop / $designDesktop) + vw;
+    }
+
+    @media (min-width: $maxRems) {
+        // on max rems we're multiplying 1vw by the coefficient that we got above:
+        font-size: ($maxRems / 100) * ($desktop / $designDesktop);
+    }
+}

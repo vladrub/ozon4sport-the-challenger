@@ -1,0 +1,18 @@
+@function toRem($size) {
+    $remSize: $size / 12 + rem + ' ';
+
+    @return #{$remSize};
+}
+
+@function em($px, $root: 16) {
+    @return $px / $root + em;
+}
+
+//fonts
+$font: 'GTEestiProDisplay', sans-serif;
+
+
+//breakpoints
+$desktop: 1416px;
+$tablet: 1024px;
+$mobile: 576px;

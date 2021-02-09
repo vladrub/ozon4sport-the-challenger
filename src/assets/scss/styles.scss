@@ -1,0 +1,41 @@
+@import 'utility/fonts';
+
+body {
+    margin: 0;
+}
+
+#content {
+    @import 'utility/vars';
+
+    max-width: 1520px;
+    font-family: $font;
+    margin: 0 auto;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #fff;
+
+    @media (max-width: $desktop - 1) {
+        font-size: (100/95) + vw;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: (100/64) + vw;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: (100/20) + vw;
+    }
+
+    .content-wrapper {
+        margin: 0 52px;
+        background: #f9f9f9;
+        width: 1416px;
+    }
+
+    @import 'utility/reset';
+    @import 'utility/common';
+    @import 'ui/ui';
+    @import 'blanks/blanks';
+    @import 'sections/sections';
+}
