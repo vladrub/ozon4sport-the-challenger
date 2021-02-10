@@ -2,10 +2,19 @@
     padding-left: em(120);
     margin-top: em(-129);
 
+    @media (max-width: $tablet) {
+        padding-left: em(80);
+        margin-top: em(-129);
+    }
+
     &__content {
         width: em(1056);
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            width: em(696);
+        }
     }
 
     &__card {
@@ -15,6 +24,11 @@
         height: em(336);
         transition: 0.5s linear;
         transform: translateY(0);
+
+        @media (max-width: $tablet) {
+            width: em(216);
+            height: em(216);
+        }
 
         &_february {
             background-image: url('/public/images/trainings/february.jpg');
@@ -62,6 +76,10 @@
         background-color: rgba(0, 91, 255, 0);
         transition: 0.3s;
         box-sizing: border-box;
+
+        @media (max-width: $tablet) {
+            padding: em(20) em(10) em(64) em(10);
+        }
     }
 
     &__card-title {
@@ -70,6 +88,12 @@
         font-weight: 500;
         font-size: em(48);
         line-height: em(28, 48);
+
+        @media (max-width: $tablet) {
+            font-size: em(36);
+            line-height: em(28, 36);
+            top: em(-28, 36);
+        }
     }
 
     &__card-subtitle {
@@ -78,12 +102,24 @@
         font-size: em(36);
         line-height: em(36, 36);
         margin-bottom: em(20, 36);
+
+        @media (max-width: $tablet) {
+            min-height: em(52, 24);
+            font-size: em(24);
+            line-height: em(26, 24);
+            margin-bottom: em(13, 24);
+        }
     }
 
     &__card-text {
         font-weight: 300;
         font-size: em(18);
         line-height: em(24, 18);
+
+        @media (max-width: $tablet) {
+            font-size: em(12);
+            line-height: em(16, 12);
+        }
     }
 
     &__card-soon {

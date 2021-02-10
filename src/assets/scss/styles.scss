@@ -7,29 +7,23 @@ body {
 #ozonChallenger {
     @import 'utility/vars';
 
-    max-width: 1520px;
+    max-width: 1416px;
     font-family: $font;
-    margin: 0 auto;
     color: #fff;
     font-size: 16px;
-    background: #fff;
+    background: #f9f9f9;
+    margin: 0 auto;
 
-    @media (max-width: $desktop - 1) {
-        font-size: (100/95) + vw;
+    @media (max-width: $desktop) {
+        font-size: (100/92) + vw;
     }
 
     @media (max-width: $tablet) {
-        font-size: (100/64) + vw;
+        font-size: (100/62) + vw;
     }
 
     @media (max-width: $mobile) {
         font-size: (100/20) + vw;
-    }
-
-    .ozonChallenger-wrapper {
-        margin: 0 52px;
-        background: #f9f9f9;
-        width: 1416px;
     }
 
     @import 'utility/reset';

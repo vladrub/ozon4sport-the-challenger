@@ -2,22 +2,42 @@
     background: #002855;
     padding: em(60) em(240) em(287) em(120);
 
+    @media (max-width: $tablet) {
+        padding: em(40) em(217) em(126) em(80);
+        height: em(520);
+    }
+
     &__text {
         font-weight: 300;
         font-size: em(21);
         line-height: em(28, 21);
         margin-bottom: em(60, 21);
+
+        @media (max-width: $tablet) {
+            font-size: em(18);
+            line-height: em(24, 18);
+            margin-bottom: em(60, 18);
+        }
     }
 
     &__group {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            flex-wrap: wrap;
+        }
     }
 
     &__about {
         display: flex;
         width: em(336);
         align-items: center;
+
+        @media (max-width: $tablet) {
+            width: em(318);
+            margin-bottom: em(30);
+        }
     }
 
     &__icon {
@@ -25,6 +45,11 @@
         height: em(56);
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media (max-width: $tablet) {
+            width: em(48);
+            height: em(48);
+        }
 
         &_calendar {
             background-image: url('/public/images/icons/infoIcons/calendar.svg');
@@ -43,6 +68,12 @@
         padding-left: em(20, 21);
         font-weight: 500;
         font-size: em(21);
-        line-height: em(28);
+        line-height: em(28, 21);
+
+        @media (max-width: $tablet) {
+            padding-left: em(10, 18);
+            font-size: em(18);
+            line-height: em(24, 18);
+        }
     }
 }
