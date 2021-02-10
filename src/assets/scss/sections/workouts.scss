@@ -1,6 +1,5 @@
 .workouts {
-    padding-top: em(90);
-    padding-left: em(120);
+    padding: em(90) em(150) 0 em(120);
     color: #000;
     margin-bottom: em(70);
 
@@ -40,7 +39,7 @@
 
     &__group {
         display: flex;
-        padding-right: em(255);
+        padding-right: em(105);
         justify-content: space-between;
     }
 

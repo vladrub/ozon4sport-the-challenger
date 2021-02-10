@@ -4,13 +4,12 @@ body {
     margin: 0;
 }
 
-#content {
+#ozonChallenger {
     @import 'utility/vars';
 
     max-width: 1520px;
     font-family: $font;
     margin: 0 auto;
-    line-height: 40px;
     color: #fff;
     font-size: 16px;
     background: #fff;
@@ -27,7 +26,7 @@ body {
         font-size: (100/20) + vw;
     }
 
-    .content-wrapper {
+    .ozonChallenger-wrapper {
         margin: 0 52px;
         background: #f9f9f9;
         width: 1416px;

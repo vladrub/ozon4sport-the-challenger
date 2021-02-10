@@ -1,6 +1,6 @@
 .info {
     background: #002855;
-    padding: em(60) 0 em(296) em(120);
+    padding: em(60) em(240) em(287) em(120);
 
     &__text {
         font-weight: 300;
@@ -12,12 +12,12 @@
     &__group {
         display: flex;
         justify-content: space-between;
-        padding-right: em(240);
     }
 
     &__about {
         display: flex;
         width: em(336);
+        align-items: center;
     }
 
     &__icon {

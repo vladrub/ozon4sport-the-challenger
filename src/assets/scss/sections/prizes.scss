@@ -1,15 +1,16 @@
 .prizes {
     padding-top: em(40);
     padding-right: em(119);
+    padding-left: em(108);
     background-image: url('/public/images/prizesBg.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 
     &__header {
-        padding-left: em(120);
+        padding-left: em(12);
         display: flex;
+        margin-bottom: em(35);
         justify-content: space-between;
-        margin-bottom: em(40);
     }
 
     &__title {
@@ -19,15 +20,15 @@
     }
 
     &__link {
+        align-self: flex-end;
         color: #fff;
         font-size: em(14);
-        line-height: em(14, 14);
+        line-height: em(22, 14);
         padding-top: em(29, 14);
     }
 
     &__win {
         display: flex;
-        padding-left: em(108);
         margin-bottom: em(26);
     }
 
@@ -55,6 +56,7 @@
 
     &__how-to-win {
         display: flex;
+        align-items: center;
     }
 
     &__icon {
@@ -90,7 +92,7 @@
 
     &__banner {
         padding-top: em(34, 156);
-        padding-left: em(277, 156);
+        padding-left: em(169, 156);
         font-weight: 500;
         font-size: em(156);
         line-height: em(160, 156);

@@ -1,19 +1,19 @@
 .top-banner {
-    width: 100%;
     height: em(500);
     background-image: url('/public/images/topBannerBg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding: em(194) em(645) em(50) em(120);
+    box-sizing: border-box;
 
     &__title {
         font-weight: 700;
         font-size: em(48);
         line-height: em(56, 48);
-        padding: em(194, 48) 0 em(85, 48) em(120, 48);
+        padding-bottom: em(85, 48);
     }
 
     &__logo {
         width: em(120);
-        padding-left: em(120);
     }
 }
